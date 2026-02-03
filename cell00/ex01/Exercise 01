@@ -1,1 +1,4 @@
-
+cd C:\Users\Tatar\discovery_piscine\cell00
+mkdir ex01
+"Z" | Out-File z -Encoding ASCII
+cat z
