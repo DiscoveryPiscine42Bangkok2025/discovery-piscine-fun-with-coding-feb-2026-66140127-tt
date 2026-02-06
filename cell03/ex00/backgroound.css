@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#changeColorBtn {
+    padding: 30px 50px;
+    letter-spacing: 1.5px;
+    font-size: 40px;
+    font-family: monospace;
+    font-weight: bolder;
+    -webkit-text-stroke: 2px rgb(221, 59, 59);
+    text-shadow: none;
+
+    border: 3.5px solid black;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+    color: rgb(243, 160, 160);
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#changeColorBtn:hover {
+    background-color: #fbffd2;
+    transform: scale(1.05);
+}
+
+#changeColorBtn:active {
+    transform: scale(0.95);
+}
