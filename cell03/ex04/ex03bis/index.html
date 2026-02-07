@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do or not to do</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #0e2632;
+            font-family: Arial, sans-serif;
+        }
+
+        .todo-app {
+            background-color: #fcf0d6;
+            padding: 20px 25px;
+            width: 320px;
+
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .todo-app button {
+            width: 100%;
+            padding: 8px 0;
+            margin-bottom: 15px;
+
+            font-size: 16px;
+            background-color: #0e2632;
+            color: #ffffff;
+
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .todo-app button:hover {
+            background-color: #710004;
+        }
+
+        .todo-app button:active {
+            transform: scale(0.96);
+        }
+
+        #ft_list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .todo {
+            padding: 8px 10px;
+            margin-bottom: 8px;
+
+            background-color: #ffffff;
+            border: 2px solid #0e2632;
+            border-radius: 6px;
+
+            color: #0e2632;
+            cursor: pointer;
+            word-break: break-word;
+
+            transition: background-color 0.2s ease;
+        }
+
+        .todo:hover {
+            background-color: #f5e6c8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="todo-app">
+        <button id="newTodoBtn">New</button>
+        <div id="ft_list"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="todo.js"></script>
+</body>
+</html>
